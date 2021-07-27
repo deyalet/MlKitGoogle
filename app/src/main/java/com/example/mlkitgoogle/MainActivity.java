@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         else{
             for (FirebaseVisionText.Block block : firebaseVisionText.getBlocks()){
                 String text = block.getText();
-                textView.setText(text);
+                textView.append(text+"\n");
             }
         }
     }
